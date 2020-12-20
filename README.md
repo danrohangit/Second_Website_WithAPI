@@ -15,3 +15,5 @@ After a few hours of research, i decided to focus on quality of life in searchin
 [Pokemon API](https://pokeapi.co/docs/v2#pokemon)
 
 [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
+
+[Public API](https://github.com/public-apis/public-apis#anime)
