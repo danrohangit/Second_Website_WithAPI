@@ -351,8 +351,51 @@
   /* sets default parameters for website, fixes margin */
   
   *{
-    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color:aquamarine;
+  }
+
+  .container{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top:5%;
+      border-radius: 25px;
+      background-color:white;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  .flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      background-color:white;
+  }
+
+  .flex-1 h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      font-size:300%;
+      font-family:fantasy;
+      color:CornflowerBlue;
+      background-color:white;
+  }
+
+  @media screen and (max-width: 800px) {
+    /* 50% for two "Columns" */
+    .container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      max-width: 100%;
+      font-size: 100%;
+    }
+    
   }
