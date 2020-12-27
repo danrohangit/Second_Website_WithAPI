@@ -72,7 +72,31 @@ $("#poke_form").submit(function(event){
         $('#poke_image').append('<li>'+game.version.name +'</li>');
       })
 
+      /* Saves to localstorage
 
+      let myObj = {
+        picture: data.sprites.front_default,
+        name: data.name,
+        id: data.id,
+        //stats: stat.base_stat,
+       // abilities: ability.ability.name,
+       // version: game.version.name
+
+      };
+
+      let myObj_serialized = JSON.stringify(myObj);
+
+      localStorage.setItem("myObj",myObj_serialized);
+
+      let myObj_deserialized = JSON.parse(localStorage.getItem("myObj"));
+
+      console.log(myObj_deserialized)
+
+      $('#poke_image').append('<li>'+myObj_deserialized.name+'</li>');
+
+      */
+
+      
 
 
         /* 
@@ -83,6 +107,8 @@ $("#poke_form").submit(function(event){
         })
         End of test codes
         */
+
+
       },
 
     })
