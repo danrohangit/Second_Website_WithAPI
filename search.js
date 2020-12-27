@@ -13,8 +13,8 @@ $(document).ready(function () {
   End of test codes
 */
 
-
-//<----------------------------------------------------------------------------------------------------->
+// Submission Event
+// <----------------------------------------------------------------------------------------------------->
 $("#poke_form").submit(function(event){
 
   event.preventDefault() //prevent auto submission
@@ -28,10 +28,24 @@ $("#poke_form").submit(function(event){
 
     // Test code var $poke_image = $('#poke_image');
 
+  // Half of submission <----------------------------------------------------------------------------------------------------->
+
+  // Check for errors  <----------------------------------------------------------------------------------------------------->
   $.ajax({
       
     method:'GET',
     url:url,
+
+    statusCode: {
+      404: function () {
+
+          alert("Check Spelling!");
+      }
+  },
+  // End of error checking <----------------------------------------------------------------------------------------------------->
+
+  // If succeed <----------------------------------------------------------------------------------------------------->
+
     success:function(data){
       console.log(data)
       $('#poke_image').html('');
@@ -44,7 +58,7 @@ $("#poke_form").submit(function(event){
         $('#poke_image').append('<li>'+stat.stat.name +': '+ stat.base_stat + '</li>');
       })
 
-      
+
 
 
         /* 
@@ -58,5 +72,6 @@ $("#poke_form").submit(function(event){
       },
 
     })
+
   })
 
