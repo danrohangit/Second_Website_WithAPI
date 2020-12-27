@@ -448,6 +448,8 @@
     text-align: center;
     text-decoration: none;
     background-color:white;
+    list-style: none;
+    font-size: 155%;
   }
 
   .poke_image_c ul{
@@ -471,7 +473,7 @@
   }
 
   .list_image{
-    list-style: none
+    list-style: none;
   }
   .list_image img{
     background-color:white;

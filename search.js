@@ -35,7 +35,7 @@ $(document).ready(function () {
         $('#poke_image').html('');
 
         $('#poke_image').append('<li class="list_image"> <img src="'+data.sprites.front_default+'"></li>');
-
+        $('#poke_image').append('<li>Name: '+data.name+'</li>');
         /* 
         Test codes
         $.each(data, function(i,picture){
