@@ -13,29 +13,40 @@ $(document).ready(function () {
   End of test codes
 */
 
-  $("#poke_form").submit(function(event){
 
-    event.preventDefault() //prevent auto submission
+//<----------------------------------------------------------------------------------------------------->
+$("#poke_form").submit(function(event){
 
-    $("#poke_image").empty() //upon submission, values in website deleted automatically
+  event.preventDefault() //prevent auto submission
 
-    var search_poke = $("#search_poke").val()
+  $("#poke_image").empty() //upon submission, values in website deleted automatically
 
-    var url = "https://pokeapi.co/api/v2/pokemon/"+search_poke+"/" //api and search function
+  var search_poke = $("#search_poke").val()
+
+  var url = "https://pokeapi.co/api/v2/pokemon/"+search_poke+"/" //api and search function
 
 
     // Test code var $poke_image = $('#poke_image');
 
-    $.ajax({
+  $.ajax({
       
-      method:'GET',
-      url:url,
-      success:function(data){
-        console.log(data)
-        $('#poke_image').html('');
+    method:'GET',
+    url:url,
+    success:function(data){
+      console.log(data)
+      $('#poke_image').html('');
 
-        $('#poke_image').append('<li class="list_image"> <img src="'+data.sprites.front_default+'"></li>');
-        $('#poke_image').append('<li>Name: '+data.name+'</li>');
+      $('#poke_image').append('<li class="list_image"> <img src="'+data.sprites.front_default+'"></li>');
+      $('#poke_image').append('<li>Name: '+data.name+'</li>');
+      $('#poke_image').append('<li>ID: '+data.id+'</li><br>');
+      
+      $.each(data.stats, function(i,stat){
+        $('#poke_image').append('<li>'+stat.stat.name +': '+ stat.base_stat + '</li>');
+      })
+
+      
+
+
         /* 
         Test codes
         $.each(data, function(i,picture){
@@ -44,7 +55,8 @@ $(document).ready(function () {
         })
         End of test codes
         */
-      }
+      },
+
     })
   })
 

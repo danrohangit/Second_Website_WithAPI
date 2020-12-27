@@ -470,6 +470,7 @@
 
   .poke_image_c li{
     background-color:white;
+    text-transform: capitalize;
   }
 
   .list_image{
