@@ -34,7 +34,7 @@ $(document).ready(function () {
         console.log(data)
         $('#poke_image').html('');
 
-        $('#poke_image').append('<li class="list-image"> <img src="'+data.sprites.front_default+'"></li>');
+        $('#poke_image').append('<li class="list_image"> <img src="'+data.sprites.front_default+'"></li>');
 
         /* 
         Test codes

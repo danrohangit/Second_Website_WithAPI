@@ -442,6 +442,49 @@
     margin-bottom:2%;
   }
 
+  .poke_image_c{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color:white;
+  }
+
+  .poke_image_c ul{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color:white;
+  }
+
+  .poke_image_c ul li{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color:white;
+  }
+
+  .poke_image_c li{
+    background-color:white;
+  }
+
+  .list_image{
+    list-style: none
+  }
+  .list_image img{
+    background-color:white;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 200px;
+
+
+  }
+
+
+
   @media screen and (max-width: 1400px) {
     .container {
       justify-content: center;
