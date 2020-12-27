@@ -72,7 +72,24 @@ $("#poke_form").submit(function(event){
         $('#poke_image').append('<li>'+game.version.name +'</li>');
       })
 
-      /* Saves to localstorage
+
+
+      //add to local storage
+        var pokemons = JSON.parse(localStorage.getItem("pokemonsInList")||"[]");
+        var pokemon = {
+          picture: data.sprites.front_default,
+          name: data.name,
+          id: data.id
+        };
+
+        pokemons.push(pokemon);
+
+        console.log(pokemon)
+        localStorage.setItem("pokemonsInList", JSON.stringify(pokemons))
+      
+
+      // Saves to localstorage TEST
+      /*
 
       let myObj = {
         picture: data.sprites.front_default,
@@ -88,25 +105,14 @@ $("#poke_form").submit(function(event){
 
       localStorage.setItem("myObj",myObj_serialized);
 
-      let myObj_deserialized = JSON.parse(localStorage.getItem("myObj"));
-
-      console.log(myObj_deserialized)
-
-      $('#poke_image').append('<li>'+myObj_deserialized.name+'</li>');
-
       */
+    
 
       
 
 
-        /* 
-        Test codes
-        $.each(data, function(i,picture){
-            $poke_image.append('<li>'+picture.name+'</li>');  
 
-        })
-        End of test codes
-        */
+    
 
 
       },
