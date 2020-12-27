@@ -53,9 +53,17 @@ $("#poke_form").submit(function(event){
       $('#poke_image').append('<li class="list_image"> <img src="'+data.sprites.front_default+'"></li>');
       $('#poke_image').append('<li>Name: '+data.name+'</li>');
       $('#poke_image').append('<li>ID: '+data.id+'</li><br>');
+
+      $('#poke_image').append('<li>stats</li>');
       
       $.each(data.stats, function(i,stat){
         $('#poke_image').append('<li>'+stat.stat.name +': '+ stat.base_stat + '</li>');
+      })
+
+      $('#poke_image').append('<br><li>Abilities</li>');
+
+      $.each(data.abilities, function(i,ability){
+        $('#poke_image').append('<li>'+ability.ability.name +'</li>');
       })
 
 
