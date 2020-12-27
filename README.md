@@ -1,9 +1,9 @@
 # 15_S10208266_MuhdDandarawieBinRohani_Assg2_website
 Purpose is to integrate API into a website. 
 
-Deciding between fitness or learning/dictionary based website
+Problem Statement: To assist those needing details regarding pokemon for their own playthrough or research in one platform.
 
-After a few hours of research, i decided to focus on quality of life in searching for pokemon and its moves.
+Tested API on postman and it works.
 
 ## Technologies Used
 [Guide for fetch API](https://www.youtube.com/watch?v=cuEtnrL9-H0&ab_channel=WebDevSimplified)
