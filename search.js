@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var settings = {
-      "url": "https://pokeapi.co/api/v2/pokemon/",
+      "url": "https://pokeapi.co/api/v2/pokemon/"+search+"/",
       "method": "GET",
     };
   

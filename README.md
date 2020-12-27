@@ -17,3 +17,5 @@ Tested API on postman and it works.
 [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
 
 [Public API](https://github.com/public-apis/public-apis#anime)
+
+[Api Ajax Guide](https://www.youtube.com/watch?v=Jpt6tQBm0Bo&ab_channel=CodingShiksha)
