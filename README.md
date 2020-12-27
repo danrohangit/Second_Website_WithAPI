@@ -19,3 +19,5 @@ Tested API on postman and it works.
 [Public API](https://github.com/public-apis/public-apis#anime)
 
 [Api Ajax Guide](https://www.youtube.com/watch?v=Jpt6tQBm0Bo&ab_channel=CodingShiksha)
+
+[Autocomplete](https://www.youtube.com/watch?v=mZOpvhywT_E&ab_channel=Webslesson)
