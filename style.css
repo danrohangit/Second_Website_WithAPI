@@ -397,8 +397,8 @@
     text-align: center;
     border-radius: 25px;
     background-color:white;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   .search_poke_container{
@@ -407,7 +407,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top:5%;
+    border-radius: 25px;
     background-color:white;
+    margin-left: 25%;
+    margin-right: 25%;
   }  
 
   .input_poke_cont{
@@ -416,24 +420,49 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top:5%;
     background-color:white;
-    padding: 5px 32px;
-    font-size: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 200%;
   }
 
   .the_button{
     background-color: cornflowerblue;
     border: none;
     color: white;
-    padding: 5px 32px;
+    padding:  2% 5%;
     justify-content: center;
     align-items: center;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 155%;
     border-radius: 15px;
     margin-bottom:2%;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    max-width: 100%;
+    font-size: 100%;
+  }
+
+  .input_poke_cont{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:5%;
+    background-color:white;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 200%;
+  }
   }
 
   @media screen and (max-width: 800px) {
@@ -450,7 +479,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-        font-size:400%;
+        font-size:500%;
         font-family:fantasy;
         color:CornflowerBlue;
         background-color:white;
@@ -462,23 +491,40 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-top:5%;
       background-color:white;
-      padding: 5px 32px;
-      font-size: 25px;
+      margin-left: 25%;
+      margin-right: 25%;
+      font-size: 200%;
     }
 
+    @media screen and (max-width: 625px) {
+      .flex_1 h1{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+          font-size:400%;
+          font-family:fantasy;
+          color:CornflowerBlue;
+          background-color:white;
+      }
+      .input_poke_cont{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top:5%;
+        background-color:white;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 200%;
+      }
+    }
 
-
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 460px) {
       /* 50% for two "Columns" */
-      .container {
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        max-width: 100%;
-        font-size: 100%;
-      }   
-
       .flex_1 h1{
         display:flex;
         justify-content: center;
@@ -489,30 +535,17 @@
           color:CornflowerBlue;
           background-color:white;
       }
-
       .input_poke_cont{
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top:5%;
         background-color:white;
-        padding: 5px 32px;
-        font-size: 15px;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 125%;
       }
-
-      @media screen and (max-width: 450px) {
-        /* 50% for two "Columns" */
-  
-        .input_poke_cont{
-          display:flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          background-color:white;
-          padding: 25px 0px;
-        }
-  }
 }
   }
