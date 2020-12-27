@@ -66,6 +66,12 @@ $("#poke_form").submit(function(event){
         $('#poke_image').append('<li>'+ability.ability.name +'</li>');
       })
 
+      $('#poke_image').append('<br><li>Game Version</li>');
+
+      $.each(data.game_indices, function(i,game){
+        $('#poke_image').append('<li>'+game.version.name +'</li>');
+      })
+
 
 
 
