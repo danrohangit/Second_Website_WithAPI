@@ -471,21 +471,6 @@
     margin-bottom:2%;
   }
 
-  .button_history{
-    background-color: cornflowerblue;
-    border: none;
-    color: white;
-    padding:  2% 5%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 125%;
-    border-radius: 15px;
-    margin-bottom:2%;
-  }
-
   .poke_image_c{
     justify-content: center;
     align-items: center;
@@ -513,8 +498,38 @@
     width: 200px;
   }
 
+  .button_history{
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    padding:  2% 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 125%;
+    border-radius: 15px;
+    margin-bottom:2%;
+  }
+
   .poke_history{
     background-color:white;
+  }
+
+  .poke_hist_c{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color:white;
+    list-style: none;
+    font-size: 155%;
+  }
+
+  .poke_hist_c li{
+    background-color:white;
+    text-transform: capitalize;
   }
 
 
@@ -600,7 +615,7 @@
       }
 
       .button_history{
-        font-size: 85%;
+        font-size: 100%;
       }
     }
 
@@ -627,6 +642,10 @@
         margin-left: 25%;
         margin-right: 25%;
         font-size: 125%;
+      }
+
+      .button_history{
+        font-size: 100%;
       }
 }
   }

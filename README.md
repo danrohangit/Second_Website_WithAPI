@@ -23,4 +23,11 @@ Tested API on postman and it works.
 [Autocomplete](https://www.youtube.com/watch?v=mZOpvhywT_E&ab_channel=Webslesson)
 
 ## TODO
-[Find out how to save stats, abilities and game versions]
+[        /* To store an array for example HP,
+        hp: data.stats[0].stat.name,
+
+        But it is more difficult to store array information when it is not consistent
+        If data.abilities[2].ability.name does not exist, an error appears.
+        Pokemons can have more than 2 abilties or even less.
+        */
+]

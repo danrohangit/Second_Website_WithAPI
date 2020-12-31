@@ -1,18 +1,3 @@
-/* Test codes
-$(document).ready(function () {
-    var settings = {
-      "url": "https://pokeapi.co/api/v2/pokemon/"+search+"/",
-      "method": "GET",
-    };
-  
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-  
-  });//eof documentready
-  End of test codes
-*/
-
 // Submission Event
 // <----------------------------------------------------------------------------------------------------->
 $("#poke_form").submit(function(event){
@@ -75,6 +60,8 @@ $("#poke_form").submit(function(event){
 
 
       //add to local storage
+
+
         var pokemons = JSON.parse(localStorage.getItem("pokemonsInList")||"[]");
         var pokemon = {
           picture: data.sprites.front_default,
@@ -82,39 +69,20 @@ $("#poke_form").submit(function(event){
           id: data.id,
         };
 
+
         pokemons.push(pokemon);
 
         console.log(pokemon)
         localStorage.setItem("pokemonsInList", JSON.stringify(pokemons))
-      
+
+        /* To store an array for example HP,
+        hp: data.stats[0].stat.name,
+
+        But it is more difficult to store array information when it is not consistent
+        If data.abilities[2].ability.name does not exist, an error appears.
+        Pokemons can have more than 2 abilties or even less.
+        */
     
-      // Saves to localstorage TEST
-      /*
-
-      let myObj = {
-        picture: data.sprites.front_default,
-        name: data.name,
-        id: data.id,
-        //stats: stat.base_stat,
-       // abilities: ability.ability.name,
-       // version: game.version.name
-
-      };
-
-      let myObj_serialized = JSON.stringify(myObj);
-
-      localStorage.setItem("myObj",myObj_serialized);
-
-      */
-    
-
-      
-
-
-
-    
-
-
       },
 
     })
