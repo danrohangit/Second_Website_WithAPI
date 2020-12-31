@@ -23,6 +23,4 @@ Tested API on postman and it works.
 [Autocomplete](https://www.youtube.com/watch?v=mZOpvhywT_E&ab_channel=Webslesson)
 
 ## TODO
-[Find out how to delete localstorage]
-[Add a delete button in history page]
 [Find out how to save stats, abilities and game versions]

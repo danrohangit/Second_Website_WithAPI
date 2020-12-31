@@ -471,6 +471,21 @@
     margin-bottom:2%;
   }
 
+  .button_history{
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    padding:  2% 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 125%;
+    border-radius: 15px;
+    margin-bottom:2%;
+  }
+
   .poke_image_c{
     justify-content: center;
     align-items: center;
@@ -496,6 +511,10 @@
     flex-flow: row nowrap;
     align-items: center;
     width: 200px;
+  }
+
+  .poke_history{
+    background-color:white;
   }
 
 
@@ -566,6 +585,7 @@
           color:CornflowerBlue;
           background-color:white;
       }
+
       .input_poke_cont{
         display:flex;
         flex-direction: column;
@@ -577,6 +597,10 @@
         margin-left: 25%;
         margin-right: 25%;
         font-size: 200%;
+      }
+
+      .button_history{
+        font-size: 85%;
       }
     }
 
