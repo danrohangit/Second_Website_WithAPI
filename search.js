@@ -79,7 +79,9 @@ $("#poke_form").submit(function(event){
         var pokemon = {
           picture: data.sprites.front_default,
           name: data.name,
-          id: data.id
+          id: data.id,
+          hp: data.stats[0].stat.name,
+          hp_stat: data.stats[0].base_stat
         };
 
         pokemons.push(pokemon);
