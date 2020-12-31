@@ -59,6 +59,7 @@ $("#poke_form").submit(function(event){
       $.each(data.stats, function(i,stat){
         $('#poke_image').append('<li>'+stat.stat.name +': '+ stat.base_stat + '</li>');
       })
+      
 
       $('#poke_image').append('<br><li>Abilities</li>');
 
@@ -73,15 +74,12 @@ $("#poke_form").submit(function(event){
       })
 
 
-
       //add to local storage
         var pokemons = JSON.parse(localStorage.getItem("pokemonsInList")||"[]");
         var pokemon = {
           picture: data.sprites.front_default,
           name: data.name,
           id: data.id,
-          hp: data.stats[0].stat.name,
-          hp_stat: data.stats[0].base_stat
         };
 
         pokemons.push(pokemon);
@@ -89,7 +87,7 @@ $("#poke_form").submit(function(event){
         console.log(pokemon)
         localStorage.setItem("pokemonsInList", JSON.stringify(pokemons))
       
-
+    
       // Saves to localstorage TEST
       /*
 
