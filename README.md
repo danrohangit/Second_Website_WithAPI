@@ -22,5 +22,5 @@ Tested API on postman and it works.
 
 [Autocomplete](https://www.youtube.com/watch?v=mZOpvhywT_E&ab_channel=Webslesson)
 
-## Technologies Used
-[Website](https://dandait04.github.io/15_S10208266_MuhdDandarawieBinRohani_Assg2_website/)
+## Link to test out my work
+[Website](https://danrohangit.github.io/Second_Website_WithAPI/)
